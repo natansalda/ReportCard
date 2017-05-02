@@ -51,7 +51,7 @@ public class ReportCard {
     private String setStudentName(String studentName) {
         return studentName;
     }
-    
+
     //Methods to get final grading
     private String getOpinionMath(int averageGradeMath) {
         if (averageGradeMath >= 4.5) {
