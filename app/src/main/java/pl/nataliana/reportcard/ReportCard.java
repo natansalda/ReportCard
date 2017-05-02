@@ -15,6 +15,12 @@ public class ReportCard {
 
 
     //Constructor
+    public ReportCard (int courseGradesMath, int courseGradesEnglish, int courseGradesBiology, int averageGradeMath, int averageGradeEnglish, int averageGradeBiology){
+        this.averageGradeMath = averageGradeMath;
+        this.averageGradeEnglish = averageGradeEnglish;
+        this.averageGradeBiology = averageGradeBiology;
+    }
+    //Constructor for a particular student
     public ReportCard() {
         courseGradesMath = new int[]{4, 5, 4, 5, 4, 5, 5};
         courseGradesEnglish = new int[]{4, 3, 4, 4, 4};
@@ -47,8 +53,8 @@ public class ReportCard {
         return averageGradeBiology;
     }
 
-    //Method to set student name
-    private String setStudentName(String studentName) {
+    //Method to get student name
+    private String getStudentName(String studentName){
         return studentName;
     }
 
@@ -99,7 +105,7 @@ public class ReportCard {
     //Method displaying info to the user
     @Override
     public String toString() {
-        return "Student:" + setStudentName("Natalia Nazaruk") + " grades:\n" + COURSE_MATH + ": " + getOpinionMath(averageGradeMath) +
+        return "Student:" + getStudentName("Natalia Nazaruk") + " grades:\n" + COURSE_MATH + ": " + getOpinionMath(averageGradeMath) +
                 "\n" + COURSE_ENGLISH + ": " + getOpinionEnglish(averageGradeEnglish) + "\n" + COURSE_BIOLOGY + ": " + getOpinionBiology(averageGradeBiology);
 
     }
