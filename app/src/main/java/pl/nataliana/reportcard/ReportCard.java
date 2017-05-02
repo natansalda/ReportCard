@@ -15,7 +15,7 @@ public class ReportCard {
 
 
     //Constructor
-    public ReportCard (int courseGradesMath, int courseGradesEnglish, int courseGradesBiology, int averageGradeMath, int averageGradeEnglish, int averageGradeBiology){
+    public ReportCard (int averageGradeMath, int averageGradeEnglish, int averageGradeBiology){
         this.averageGradeMath = averageGradeMath;
         this.averageGradeEnglish = averageGradeEnglish;
         this.averageGradeBiology = averageGradeBiology;
