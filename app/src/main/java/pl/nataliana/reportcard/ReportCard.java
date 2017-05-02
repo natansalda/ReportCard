@@ -32,21 +32,21 @@ public class ReportCard {
     }
 
     //Methods to calculate average grade for different courses
-    public int calculateAwerageGradeMath() {
+    public int calculateAverageGradeMath() {
         for (int i : courseGradesMath)
             averageGradeMath += i;
         averageGradeMath = (averageGradeMath / courseGradesMath.length);
         return averageGradeMath;
     }
 
-    public int calculateAwerageGradeEnglish() {
+    public int calculateAverageGradeEnglish() {
         for (int i : courseGradesEnglish)
             averageGradeEnglish += i;
         averageGradeEnglish = (averageGradeEnglish / courseGradesEnglish.length);
         return averageGradeEnglish;
     }
 
-    public int calculateAwerageGradeBiology() {
+    public int calculateAverageGradeBiology() {
         for (int i : courseGradesBiology)
             averageGradeBiology += i;
         averageGradeBiology = (averageGradeBiology / courseGradesBiology.length);
